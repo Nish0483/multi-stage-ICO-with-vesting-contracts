@@ -1,0 +1,12 @@
+{
+  "name": "multistage-ico-vesting",
+  "version": "1.0.0",
+  "description": "smart contracts repo for multistage ico with cross round buy and vesting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

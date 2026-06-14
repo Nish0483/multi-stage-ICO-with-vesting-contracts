@@ -1,0 +1,26 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+test = "test"
+cache_path = "cache"
+optimizer = true
+optimizer_runs = 200
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
+
+[profile.default.model_checker]
+contracts = { "src/ICO_directSell.sol" = [ "ico_test" ] }
+engine = "chc"
+timeout = 10000
+targets = [ "assert" ]
+
+[fmt]
+line_length = 120
+tab_width = 4
+bracket_spacing = true
+int_types = "long"
+
+[rpc_endpoints]
+mainnet = "https://eth-mainnet.alchemyapi.io/v2/${API_KEY_ALCHEMY}"
+goerli = "https://eth-goerli.alchemyapi.io/v2/${API_KEY_ALCHEMY}"
