@@ -60,7 +60,7 @@ contract VestingVault is AccessControl, ReentrancyGuard, Pausable {
     bytes32 public constant ALLOCATOR_ROLE = keccak256("ALLOCATOR_ROLE");
 
     /// @notice Upper bound on round count (`uint8` round index in schedules)
-    uint256 public constant MAX_ROUNDS = 255;
+    uint256 public constant MAX_ROUNDS = 10;
 
     /// @notice Number of vesting rounds (matches ICO stage count at deploy time)
     uint256 public immutable roundCount;
